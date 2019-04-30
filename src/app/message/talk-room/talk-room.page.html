@@ -1,0 +1,47 @@
+<ion-header >
+  <ion-toolbar color="dark">
+      <ion-back-button></ion-back-button>
+    <ion-title>バンド名orユーザー名</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list class="chat-list">
+      <ion-item no-lines>
+        <!--
+        <div class="chat-status" text-center >
+          <span class="chat-date">{{chat.sendDate | date:'short'}}</span>
+          <span class="chat-content-center">{{chat.message}}</span>
+        </div>
+        -->
+        <ng-template #message>
+          <div class="chat-message" text-right >
+            <div class="right-bubble">
+              <span class="msg-name"></span>
+              <span class="msg-date">00:00am</span>
+              <p text-wrap>メッセージ</p>
+            </div>
+          </div>
+          <div class="chat-message" text-left >
+            <div class="left-bubble">
+              <span class="msg-name">ユーザー名</span>
+              <span class="msg-date">00:00am</span>
+              <p text-wrap>メッセージ</p>
+            </div>
+          </div>
+        </ng-template>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+
+      <ion-toolbar>
+        <ion-input type="text" placeholder="メッセージを入力" [(ngModel)]="chatMessage" name="message"></ion-input>
+        <ion-buttons slot="end">
+          <ion-button slot="end" color="primary" (click)="sendChatMessage()">
+            送信
+            <ion-icon name="send"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-footer>

@@ -1,0 +1,44 @@
+<ion-header>
+        <ion-tab-bar slot="top" color="dark" #tabmenu>
+            <ion-tab-button color="dark" [class.disableClass]="!bandTabSelectedClass" [class.selectedClass]="bandTabSelectedClass" (click)="bandTab()">
+                <ion-label >バンド</ion-label>
+            </ion-tab-button>
+            <ion-tab-button color="dark" [class.disableClass]="!soloTabSelectedClass" [class.selectedClass]="soloTabSelectedClass"(click)="soloTab()">
+                <ion-label >ソロ</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+      </ion-header>
+<ion-content main padding>
+        <ion-list>
+                        <ion-item item-start style="--border-color:#ffffff;" (click)="joinRoom()">
+                                <ion-avatar item-start>
+                                        <img src="../../assets/icon/favicon.png">
+                                </ion-avatar>
+                                <div>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">Account Name</p>
+                                        <ion-note item-end style="padding-left: 10px;     margin: 0 0 0 0;">最新の発言内容</ion-note> 
+                                </div>
+                                <ion-note item-end style="margin: 0 0 0 auto;">00:00 am</ion-note>
+                        </ion-item>
+                        <ion-item item-start style="--border-color:#ffffff;" (click)="joinRoom()">
+                                <ion-avatar item-start>
+                                        <img src="../../assets/icon/favicon.png">
+                                </ion-avatar>
+                                <div>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">Account Name</p>
+                                        <ion-note item-end style="padding-left: 10px;     margin: 0 0 0 0;">最新の発言内容</ion-note> 
+                                </div>
+                                <ion-note item-end style="margin: 0 0 0 auto;">00:00 am</ion-note>
+                        </ion-item>
+                        <ion-item item-start style="--border-color:#ffffff;" (click)="joinRoom()">
+                                <ion-avatar item-start>
+                                        <img src="../../assets/icon/favicon.png">
+                                </ion-avatar>
+                                <div>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">Account Name</p>
+                                        <ion-note item-end style="padding-left: 10px;     margin: 0 0 0 0;">最新の発言内容</ion-note> 
+                                </div>
+                                <ion-note item-end style="margin: 0 0 0 auto;">00:00 am</ion-note>
+                        </ion-item>
+              </ion-list>
+</ion-content>

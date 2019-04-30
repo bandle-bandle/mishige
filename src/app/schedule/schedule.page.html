@@ -1,0 +1,20 @@
+<ion-header color="dark">
+    <ion-tab-bar slot="top" color="dark" >
+        <ion-title style="color:#ffffff;">
+            {{ viewTitle }}
+          </ion-title>
+    </ion-tab-bar>
+    
+</ion-header>
+<ion-content main padding>
+    <ion-button expand="block" color="secondary" type="button" (click)="addEvent()">予定を追加</ion-button>
+    <calendar [eventSource]="eventSource"
+    [calendarMode]="calendar.mode"
+    [currentDate]="calendar.currentDate"
+    (onEventSelected)="onEventSelected($event)"
+    (onTitleChanged)="onViewTitleChanged($event)"
+    (onTimeSelected)="onTimeSelected($event)"
+    step="30"
+    class="calendar">
+  </calendar>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-tab-bar slot="top" color="dark" #tabmenu>
+        <ion-tab-button color="dark" [class.disableClass]="!bandTabSelectedClass" [class.selectedClass]="bandTabSelectedClass" (click)="bandTab()">
+            <ion-label >バンド</ion-label>
+        </ion-tab-button>
+        <ion-tab-button color="dark" [class.disableClass]="!soloTabSelectedClass" [class.selectedClass]="soloTabSelectedClass"(click)="soloTab()">
+            <ion-label >ソロ</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+    <ion-searchbar placeholder="検索条件" color="dark" animated></ion-searchbar>
+  </ion-header>
+  
+<ion-content main padding>
+        
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "bandle",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-tab-bar slot="top" color="dark" #tabmenu>
+        <ion-tab-button color="dark" [class.disableClass]="!timelineSelectedClass" [class.selectedClass]="timelineSelectedClass" (click)="timeline()">
+            <ion-label >タイムライン</ion-label>
+        </ion-tab-button>
+        <ion-tab-button color="dark" [class.disableClass]="!rankingSelectedClass"[class.selectedClass]="rankingSelectedClass"(click)="ranking()">
+            <ion-label >ランキング</ion-label>
+        </ion-tab-button>
+        <ion-tab-button color="dark" [class.disableClass]="!contributionSelectedClass" [class.selectedClass]="contributionSelectedClass"(click)="contribution()">
+            <ion-label >投稿</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+  </ion-header>
+  <ion-content main padding>
+      <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+          <ion-refresher-content
+  pullingIcon="arrow-dropdown"
+pullingText="Pull to refresh"
+refreshingSpinner="circles"
+refreshingText="Refreshing...">
+</ion-refresher-content>
+</ion-refresher>
+        <ion-slides (ionSlideWillChange)="onSlideChangeStart()" #Slids>
+                <ion-slide>
+                  <app-timeline style="width: 100%;"></app-timeline>
+                </ion-slide>
+                <ion-slide>
+                  <app-ranking style="width: 100%;"></app-ranking>
+                </ion-slide>
+                <ion-slide>
+                  <app-contribution style="width: 100%;"></app-contribution>
+                </ion-slide>
+              </ion-slides>
+    </ion-content>
+

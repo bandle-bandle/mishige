@@ -1,0 +1,104 @@
+<ion-header>
+    <ion-tab-bar slot="top" color="dark" #tabmenu>
+        <ion-tab-button color="dark" [class.disableClass]="!bandTabSelectedClass" [class.selectedClass]="bandTabSelectedClass" (click)="bandTab()">
+            <ion-label >バンド</ion-label>
+        </ion-tab-button>
+        <ion-tab-button color="dark" [class.disableClass]="!soloTabSelectedClass" [class.selectedClass]="soloTabSelectedClass"(click)="soloTab()">
+            <ion-label >ソロ</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+  </ion-header>
+<ion-content main padding>
+    <ion-slides >
+        <ion-slide >
+            <ion-card (click)="inquiryBandAccount()">
+                    <ion-item color="dark" no-lines item-start >
+                        <img style=" margin: 0 auto 0 auto;"src="../../assets/icon/favicon.png">
+                    </ion-item>
+                    <ion-item color="dark" item-end >
+                            <div>
+                                    <p style="padding-left: 10px;     margin: 0 0 0 0;">バンド名</p>
+                                    <p style="padding-left: 10px;     margin: 0 0 0 0;">リーダー</p>  
+                            </div>
+                    </ion-item>
+            </ion-card>  
+            <ion-card (click)="inquiryBandAccount()">
+                    <ion-item color="dark" no-lines item-start >
+                        <img style=" margin: 0 auto 0 auto;"src="../../assets/icon/favicon.png">
+                    </ion-item>
+                    <ion-item color="dark" item-end >
+                            <div>
+                                    <p style="padding-left: 10px;     margin: 0 0 0 0;">バンド名</p>
+                                    <p style="padding-left: 10px;     margin: 0 0 0 0;">リーダー</p>  
+                            </div>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="inquiryBandAccount()">
+                    <ion-item color="dark" no-lines item-start >
+                        <img style=" margin: 0 auto 0 auto;"src="../../assets/icon/favicon.png">
+                    </ion-item>
+                    <ion-item color="dark" item-end >
+                            <div>
+                                    <p style="padding-left: 10px;     margin: 0 0 0 0;">バンド名</p>
+                                    <p style="padding-left: 10px;     margin: 0 0 0 0;">リーダー</p>  
+                            </div>
+                    </ion-item>
+            </ion-card> 
+        </ion-slide>
+        <ion-slide >
+                <ion-card (click)="inquiryBandAccount()">
+                        <ion-item color="dark" no-lines item-start >
+                            <img style=" margin: 0 auto 0 auto;"src="../../assets/icon/favicon.png">
+                        </ion-item>
+                        <ion-item color="dark" item-end >
+                                <div>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">バンド名</p>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">リーダー</p>  
+                                </div>
+                        </ion-item>
+                </ion-card>
+                <ion-card (click)="inquiryBandAccount()">
+                        <ion-item color="dark" no-lines item-start >
+                            <img style=" margin: 0 auto 0 auto;"src="../../assets/icon/favicon.png">
+                        </ion-item>
+                        <ion-item color="dark" item-end >
+                                <div>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">バンド名</p>
+                                        <p style="padding-left: 10px;     margin: 0 0 0 0;">リーダー</p>  
+                                </div>
+                        </ion-item>
+                </ion-card>
+            </ion-slide>
+            <ion-slide >
+                    <ion-card (click)="inquiryBandAccount()">
+                            <ion-item color="dark" no-lines item-start >
+                                <img style=" margin: 0 auto 0 auto;"src="../../assets/icon/favicon.png">
+                            </ion-item>
+                            <ion-item color="dark" item-end >
+                                    <div>
+                                            <p style="padding-left: 10px;     margin: 0 0 0 0;">バンド名</p>
+                                            <p style="padding-left: 10px;     margin: 0 0 0 0;">リーダー</p>  
+                                    </div>
+                            </ion-item>
+                    </ion-card>
+                </ion-slide>
+                <ion-slide >
+                        <ion-card>
+                                <ion-item item-start >
+                                        <p>まだバンドに参加していません</p> 
+                                </ion-item>
+                                <ion-item item-end >
+                                        <ion-button expand="block" color="secondary" type="button" style=" margin: 0 auto 0 auto;">バンドに参加しよう！</ion-button>
+                                </ion-item>
+                        </ion-card>
+                        
+                        
+                    </ion-slide>
+  </ion-slides>
+  <ion-button expand="block" color="secondary" type="button" (click)="sighnout()">アカウント</ion-button>
+  <ion-button expand="block" color="secondary" type="button" (click)="sighnout()">プライバシー設定</ion-button>
+  <ion-button expand="block" color="secondary" type="button" (click)="sighnout()">ブロック設定</ion-button>
+  <ion-button expand="block" color="secondary" type="button" (click)="sighnout()">問い合わせ</ion-button>
+  <ion-button expand="block" color="secondary" type="button" (click)="sighnout()">サインアウト</ion-button>
+</ion-content>
+

@@ -1,0 +1,22 @@
+<ion-tab-bar slot="bottom" color="dark">
+  <ion-tab-button  tabTitle="タイムライン" tabIcom="home" (click)="timeline()">
+      <ion-icon name="home" [class.selectedButtonClass]="homeSelectedClass"></ion-icon>
+      <ion-label>ホーム</ion-label>
+  </ion-tab-button>
+  <ion-tab-button  tabTitle="検索" tabIcom="search" (click)="search()">
+      <ion-icon name="search" [class.selectedButtonClass]="searchSelectedClass"></ion-icon>
+      <ion-label>検索</ion-label>
+  </ion-tab-button>
+  <ion-tab-button  tabTitle="メッセージ" tabIcom="chatbubbles" (click)="message()">
+      <ion-icon name="chatbubbles" [class.selectedButtonClass]="messageSelectedClass"></ion-icon>
+      <ion-label>メッセージ</ion-label>
+  </ion-tab-button>
+  <ion-tab-button  tabTitle="予定" tabIcom="calendar" (click)="schedule()">
+      <ion-icon name="calendar" [class.selectedButtonClass]="scheduleSelectedClass"></ion-icon>
+      <ion-label>予定</ion-label>
+  </ion-tab-button>
+  <ion-tab-button  tabTitle="設定" tabIcom="cog" (click)="config()">
+        <ion-icon name="cog" [class.selectedButtonClass]="configSelectedClass"></ion-icon>
+        <ion-label>アカウント</ion-label>
+    </ion-tab-button>
+</ion-tab-bar>
