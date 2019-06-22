@@ -9,7 +9,7 @@ import { TalkRoomPage } from './talk-room.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':id',
     component: TalkRoomPage
   }
 ];
